@@ -16,7 +16,8 @@ def area(r):
     28.274333882308138
     
     """
-    
+    if r < 0:
+        raise ValueError("Отрицательный радиус")
     return math.pi * r * r
 
 
@@ -34,4 +35,6 @@ def perimeter(r):
     >>> perimeter(3)
     18.84955592153876
     """
+    if r < 0:
+        raise ValueError("Радиус не может быть отрицательным")
     return 2 * math.pi * r
