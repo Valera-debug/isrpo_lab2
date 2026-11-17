@@ -14,6 +14,8 @@ def area(a):
     256
     
     """
+    if a < 0:
+        raise ValueError("Сторона не может быть отрицательной")
     return a * a
 
 
@@ -31,4 +33,6 @@ def perimeter(a):
     >>> perimeter(16)
     64
     """
+    if a < 0:
+        raise ValueError("Сторона не может быть отрицательной")
     return 4 * a
